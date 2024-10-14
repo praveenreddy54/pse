@@ -31,5 +31,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./  # Directory containing the files to publish
-          publish_branch: gh-pages  # Branch in the public repo to deploy to
-          external_repository: praveenreddy54/pse  # Public repo name
