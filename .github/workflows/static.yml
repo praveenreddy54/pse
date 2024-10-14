@@ -23,6 +23,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
-          publish_dir: ./ # Directory containing the files to publish
+          publish_dir: ./  # Directory containing the files to publish
           publish_branch: gh-pages  # Branch in the public repo to deploy to
-          external_repository: pse/praveenreddy54.github.io  # Public repo name
+          external_repository: praveenreddy54/pse  # Public repo name
