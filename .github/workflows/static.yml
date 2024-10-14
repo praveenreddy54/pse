@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # The branch you want to deploy from
+      - main  # Branch you want to deploy from
 
 jobs:
   deploy:
@@ -12,20 +12,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Ensure the full history is fetched for proper build
+          fetch-depth: 0  # Ensure the full history is fetched
+
+      - name: Setup SSH for GitHub
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
 
       - name: Build
         run: |
-          # Add any build commands here
+          # Add any build steps here if needed
           echo "Building the project..."
-          # For example, if it's a React project, you might want to run:
-          # npm install
-          # npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.DEPLOY_KEY }}  # SSH deploy key from GitHub Secrets
-          publish_dir: ./  # Directory containing the files to publish, like `./build` for React
-          publish_branch: gh-pages  # Branch in the repo where GitHub Pages will be hosted
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          publish_dir: ./ # Directory containing the files to publish
+          publish_branch: gh-pages  # Branch in the public repo to deploy to
           external_repository: praveenreddy54/pse  # Public repo name
