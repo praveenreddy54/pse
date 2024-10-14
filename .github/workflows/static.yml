@@ -27,9 +27,9 @@ jobs:
           echo "Building the project..."
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key: ${{ secrets.DEPLOY_KEY }}
-          publish_dir: ./build  # Adjust to your build output directory, e.g., 'build' or 'dist'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Directory containing the files to publish
           publish_branch: gh-pages  # Branch in the public repo to deploy to
           external_repository: praveenreddy54/pse  # Public repo name
