@@ -24,10 +24,7 @@ jobs:
 
       - name: Build
         run: |
-          # Replace this with the actual build command if you have one
           echo "Building the project..."
-          # If you have a specific build command like npm run build, use that
-          npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
