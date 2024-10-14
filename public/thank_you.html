@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <style>
+        body {
+            background: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+            padding: 20px;
+        }
+        .message {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 600px;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin: 10px 0;
+        }
+        .spinner {
+            border: 10px solid rgba(0, 0, 0, 0.1);
+            border-left: 10px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .redirecting {
+            font-size: 0.9rem;
+            color: #95a5a6;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        // Redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = '/ganesh_chaturthi.html';
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <h1>Thank You!</h1>
+            <p>Your registration was successful. We’re thrilled to have you join us!</p>
+            <div class="spinner"></div>
+            <p class="redirecting">You’ll be redirected to the event page shortly.</p>
+        </div>
+    </div>
+</body>
+</html>
