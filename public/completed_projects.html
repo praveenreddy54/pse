@@ -10,7 +10,7 @@
 
     <!-- Favicons -->
     <link href="assets/img/logo.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/img/logo.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -50,10 +50,7 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header
-      id="header"
-      class="fixed-top d-flex align-items-center header-transparent"
-    >
+    <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
           <h1 class="text-light">
@@ -101,200 +98,108 @@
     </header>
     <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex justify-cntent-center align-items-center">
-      <div
-        id="heroCarousel"
-        class="container carousel carousel-fade"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
-      >
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">
-              Welcome to PSE
-            </h2>
-            <p class="animate__animated animate__fadeInUp">
-              Experience the best of culture, food, and sports.
-            </p>
-            <a
-              href="index.html#about-us"
-              class="btn-get-started animate__animated animate__fadeInUp"
-              >Learn More</a
-            >
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Join the Fun</h2>
-            <p class="animate__animated animate__fadeInUp">
-              Participate in our exciting events and competitions.
-            </p>
-            <a
-              href=""
-              class="btn-get-started animate__animated animate__fadeInUp"
-              >Register</a
-            >
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Take a Look</h2>
-            <p class="animate__animated animate__fadeInUp">
-              Register now and be a part of the excitement.
-            </p>
-            <a
-              href="photos.html"
-              class="btn-get-started animate__animated animate__fadeInUp"
-              >Check Out</a
-            >
-          </div>
-        </div>
-
-        <a
-          class="carousel-control-prev"
-          href="#heroCarousel"
-          role="button"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon bx bx-chevron-left"
-            aria-hidden="true"
-          ></span>
-        </a>
-
-        <a
-          class="carousel-control-next"
-          href="#heroCarousel"
-          role="button"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon bx bx-chevron-right"
-            aria-hidden="true"
-          ></span>
-        </a>
-      </div>
-    </section>
-    <!-- End Hero -->
-
     <main id="main">
-      <!-- ======= Why Join Us Section ======= -->
-      <section
-        id="about-us"
-        class="why-us section-bg"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
+      <!-- ======= Our Services Section ======= -->
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Completed Projects</h2>
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li>Events</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- End Our Services Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section class="services">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 video-box">
-              <img
-                src="assets/img/food.jpg"
-                class="img-fluid"
-                alt="Telugu Festival"
-              />
+            <!-- Telugu Food -->
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch"
+              data-aos="fade-up"
+            >
+              <a href="foodcoupons.html#register-form" class="icon-box-link">
+                <div class="icon-box icon-box-pink" id="telugu-food">
+                  <div class="icon"><i class="bx bx-dish"></i></div>
+                  <h4 class="title">Food</h4>
+                  <p class="description">
+                    Savor the taste of authentic Telugu cuisine with our
+                    exclusive food coupons.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Sports -->
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <a
-                href="https://www.youtube.com/watch?v=Af0y5UejPng"
-                class="venobox play-btn mb-4"
-                data-vbtype="video"
-                data-autoplay="true"
-              ></a>
+                href="sports.html#register-form-sports-gc"
+                class="icon-box-link"
+              >
+                <div class="icon-box icon-box-cyan">
+                  <div class="icon"><i class="bx bx-football"></i></div>
+                  <h4 class="title">Sports</h4>
+                  <p class="description">
+                    Participate in our sports activities and stay active and
+                    healthy while having fun.
+                  </p>
+                </div>
+              </a>
             </div>
 
-            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-spa"></i></div>
-                <h4 class="title"><a href="#">Preserving Our Culture</a></h4>
-                <p class="description">
-                  Join us in celebrating and preserving the rich cultural
-                  heritage of Telugu people through festivals, traditions, and
-                  community activities.
-                </p>
-              </div>
+            <!-- Culturals -->
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a
+                href="culturals-gc.html#register-form-culturals-gc"
+                class="icon-box-link"
+              >
+                <div class="icon-box icon-box-green">
+                  <div class="icon"><i class="bx bx-music"></i></div>
+                  <h4 class="title">Culturals</h4>
+                  <p class="description">
+                    Explore and celebrate rich cultural diversity through dance
+                    and other cultural activities.
+                  </p>
+                </div>
+              </a>
+            </div>
 
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-group"></i></div>
-                <h4 class="title">
-                  <a href="#">Building Stronger Connections</a>
-                </h4>
-                <p class="description">
-                  Connect with fellow Telugu-speaking individuals, share your
-                  experiences, and make lasting friendships within our vibrant
-                  community.
-                </p>
-              </div>
+            <!-- Volunteers -->
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a
+                href="volunteers-gc.html#register-form-volunteers-gc"
+                class="icon-box-link"
+              >
+                <div class="icon-box icon-box-blue">
+                  <div class="icon"><i class="bx bx-heart"></i></div>
+                  <h4 class="title">Volunteers</h4>
+                  <p class="description">
+                    Join our volunteer team and help make a positive difference
+                    in the community.
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <!-- End Why Join Us Section -->
-
-      <!-- ======= Features Section ======= -->
-      <section id="about-us2" class="features">
-        <div class="container">
-          <div class="section-title">
-            <h2>About Us</h2>
-            <p>
-              Welcome to our Telugu Samskruthika Samithi-IIT Kanpur, where
-              people gather to celebrate festivals, enjoy cultural activities,
-              and savor traditional Telugu cuisine.
-            </p>
-          </div>
-
-          <div class="row" data-aos="fade-up">
-            <h3>Major Tasks Being Undertaken By PSE</h3>
-            <ul>
-              <li>
-                <i class="bi bi-check"></i>Technical Review of Feasibility
-                Report.
-              </li>
-              <li><i class="bi bi-check"></i>Review of Projects Estimates.</li>
-              <li>
-                <i class="bi bi-check"></i>Fixing Engineering Consultant for
-                Power Projects.
-              </li>
-              <li>
-                <i class="bi bi-check"></i>Review & Finalization of concept note
-                for various packages.
-              </li>
-              <li>
-                <i class="bi bi-check"></i>Preparation of OR for various
-                projects.
-              </li>
-              <li>
-                <i class="bi bi-check"></i>Review & Finalization of Tender
-                specification for Pojects/Packages.
-              </li>
-              <li>
-                <i class="bi bi-check"></i>Techno-commercial Evaluation of
-                Tenders for Pojects/Packages.
-              </li>
-              <li>
-                <i class="bi bi-check"></i>Price Evaluation for
-                Pojects/Packages.
-              </li>
-              <li>
-                <i class="bi bi-check"></i>Review and Approval of Package
-                Contract drawings and documents.
-              </li>
-              <li>
-                <i class="bi bi-check"></i>Review and Approval of Quality
-                Assurance Plans.
-              </li>
-              <li>
-                <i class="bi bi-check"></i>Co-ordination with the Project site
-                till completion of the Final Take Over.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <!-- End Services Section -->
     </main>
     <!-- End #main -->
 
