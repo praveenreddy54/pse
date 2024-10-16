@@ -103,7 +103,7 @@ h6,
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #16202f;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -151,7 +151,7 @@ h6,
   padding: 10px 0 10px 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #16202f;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -167,7 +167,7 @@ h6,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #427be5;
+  color: #429ce5;
 }
 
 .navbar .dropdown ul {
@@ -358,7 +358,7 @@ h6,
   height: 90vh;
   overflow: hidden;
   position: relative;
-  background-image: url('../img/home-page-welcome.jpeg'); /* Specify the path to your background image */
+  background-image: url('../../img/home-image.jpeg'); /* Specify the path to your background image */
   background-size: cover; /* This makes sure the image covers the entire section */
   background-position: center; /* This centers the image within the section */
   background-repeat: no-repeat; /* This prevents the image from repeating */
@@ -373,7 +373,7 @@ h6,
   width: 130%;
   height: 100%;
   opacity: 0;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/home-page-welcome.jpeg") center top no-repeat;
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../../img/home-image.jpeg") center top no-repeat;
   z-index: -10;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
@@ -406,7 +406,7 @@ h6,
 }
 
 #hero h2 {
-  color: #16202f;
+  color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
@@ -416,7 +416,7 @@ h6,
   width: 80%;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: #16202f;
+  color: #fff;
 }
 
 #hero .carousel-control-prev,
@@ -444,7 +444,7 @@ h6,
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
-  color: #16202f;
+  color: #fff;
   animation-delay: 0.8s;
   border: 2px solid #68A4C4;
 }
@@ -830,6 +830,11 @@ Registration form food coupons
 
 .why-us .icon-box .title a:hover {
   color: #68A4C4;
+}
+
+.why-us .description {
+  line-height: 24px;
+  font-size: 14px;
 }
 
 .why-us .icon-box .description {
